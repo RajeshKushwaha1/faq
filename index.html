@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="box2">
+                <div class="computer">
+                    <img src="image/computer-removebg-preview.png">
+                </div>
+                <div class="sound">
+                    <img src="image/cube-removebg-preview.png">
+                </div>
+                <div class="leady">
+                    <img src="image/leady-removebg-preview.png">
+                </div>
+                <div class="base">
+                    <div id="box"></div>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="title">
+                    <br><br>
+                    <h2>frequently asked questions</h2>
+                    <br><br>
+                </div>
+
+                <div class="adbox">
+                    <button class="accordion"><br>
+                        <h3>How many team members can I invite ?</h3>
+                    </button>
+
+                    <div class="panel">
+                        <br>
+                        <p>Only <b>twenty</b> members.</p>
+                        <br>
+                    </div>
+                    <hr><br>
+
+                    <button class="accordion">
+                        <h3>What is the maximum file upload ?</h3>
+                    </button>
+                    <div class="panel">
+                        <br>
+                        <p>No more than <b>2GB</b>. All fils in your account
+                            must fit your alloted storage space.</p><br>
+                    </div>
+                    <hr><br>
+
+                    <button class="accordion">
+                        <h3>How do reset my password ?</h3>
+                    </button>
+                    <div class="panel">
+                        <p>
+                            <h3>Change your password</h3><br>
+                            1.Open your <b>Google Account</b>. You might need to sign in.<br>
+                            2.Under "Security," select <b>Signing in to Google</b>.<br>
+                            3.Choose <b>Password</b>. You might need to sign in again.<br>
+                            4.Enter your new password, then select Change <b>Password</b>.<br><br>
+                                    <form>
+                                        <input type="button" value="Reset password" style="font-size: small; padding: 5px;">
+                                    </form>
+                                    <br>
+                        </p>
+                    </div>
+                    <hr><br>
+
+                    <button class="accordion">
+                        <h3>Can I Cancel my subscription ?</h3>
+                    </button>
+                    <div class="panel">
+                        <br>
+                        <p>If you want to cancel your subscription then follow this instruction.<br><br>
+                            <strong> cancel your subscription:</strong> <br>
+                            <br>
+                            1.On the top-right corner of DataCamp's landing page, click My Account > Account
+                            Settings<br>
+                            2.Click Subscriptions<br>
+                            3.Click Stop Automatic Billing<br>
+                            <br>
+                    </div>
+                    <hr><br>
+
+                    <button class="accordion">
+                        <h3>Do you provide additional support ?</h3>
+                    </button>
+                    <div class="panel">
+                        <br>
+                        <p> <b>My additional support... </b><br><br>
+                            1.disability or health<br>
+                            2.learning environment<br>
+                            3.family circumstances<br>
+                            4.social and emotional factors.
+                        <p><br>
+                    </div>
+                    <hr><br>
+                </div>
+                <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function () {
+                            this.classList.toggle("active");
+                            var panel = this.nextElementSibling;
+                            if (panel.style.maxHeight) {
+                                panel.style.maxHeight = null;
+                            } else {
+                                panel.style.maxHeight = panel.scrollHeight + "px";
+                            }
+                        });
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
